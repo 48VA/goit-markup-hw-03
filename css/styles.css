@@ -7,14 +7,52 @@ body {
   font-size: 16px;
 }
 
-/* Скидання стилів списків та посилань */
+/* reset */
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+/* common */
+.container {
+    max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* header */
+.page-header {
+  border-bottom: 1px solid, #e7e9fc;
+}
+
+.header-container {
+  padding-top: px;
+  padding-bottom: px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin-left: px;
+  align-items: center;
 }
 
 /* Логотип */
@@ -28,6 +66,11 @@ a {
   color: #4d5ae5;
 }
 
+.header-logo {
+  margin-right: 76px;
+  padding: 24px 0;
+}
+
 /* Виділення частини тексту в логотипі */
 .header-logo .logo-part {
   color: #2e2f42;
@@ -39,6 +82,8 @@ a {
 
 /* Навігаційні посилання */
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -49,9 +94,18 @@ a {
 /* Контактні посилання */
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
