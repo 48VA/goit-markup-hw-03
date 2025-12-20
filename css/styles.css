@@ -36,7 +36,7 @@ a {
 }
 
 .header-container {
-    display: flex;
+ display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -173,7 +173,7 @@ color:#ffffff
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-margin-bottom: 8px; /* відстань після заголовка */
+  margin-bottom: 8px; /* відстань після заголовка */
 }
 
 .section-first-list {
@@ -185,12 +185,15 @@ margin-bottom: 8px; /* відстань після заголовка */
 }
 
 .section-first {
-  padding: 120px 156px; 
-}
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #ffffff;
+} 
 
 .section-first-item {
-  width: 264px;                    /* кожен елемент займає однакову ширину */
-  text-align: left;         /* вирівнювання тексту */
+  width: calc((100% - 24px * 3) / 4); 
+  text-align: left;   
 }
 
 /* Основний текст  */
@@ -200,6 +203,7 @@ margin-bottom: 8px; /* відстань після заголовка */
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 /* Заголовки секцій */
 .title {
   font-size: 36px;
@@ -207,6 +211,7 @@ margin-bottom: 8px; /* відстань після заголовка */
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 72px;
 }
 
 .visually-hidden {
@@ -224,7 +229,32 @@ margin-bottom: 8px; /* відстань після заголовка */
 
 /* Друга секція */
 .section-second {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #f4f4fd;
+}
+
+.section-second-list {
+  display: flex;            /* гнучкий контейнер */
+  gap: 24px;                /* відстань між картками */
+  justify-content: center;  /* вирівнювання по центру */
+  flex-wrap: wrap;          /* перенос на новий ряд при малих екранах */
+}
+
+.section-second-item {
+  width: calc((100% - 24px * 3) / 4); 
+  text-align: center;         
+  background-color: #ffffff;
+}
+
+.photo-team {
+  display: block;
+  width: 100%;               
+  height: auto;               
+}
+
+.card { margin: 32px 16px 32px 16px;
 }
 
 .section-second .subtitle,
@@ -232,19 +262,34 @@ margin-bottom: 8px; /* відстань після заголовка */
 text-align: center;
 }
 
-/* Елементи секцій */
-.section-second-item,
-.section-third-item {
+.section-third {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #ffffff;
+}
+
+.section-third-list {
+  display: flex;            /* гнучкий контейнер */
+  gap: 24px;                /* відстань між картками */
+  justify-content: center;  /* вирівнювання по центру */
+  flex-wrap: wrap;    
+}
+
+  .section-third-item {
+  width: calc((100% - 24px * 2) / 3); 
+  text-align: left;  
   background-color: #ffffff;
 }
 
 /* Підвал сторінки */
 .page-footer {
-  background-color: #2e2f42;
+ background-color: #2e2f42;
 }
 
 /* Стилі тексту футера */
 .footer-text {
+max-width: 264px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
