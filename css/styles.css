@@ -239,7 +239,7 @@ color:#ffffff
   display: flex;            /* гнучкий контейнер */
   gap: 24px;                /* відстань між картками */
   justify-content: center;  /* вирівнювання по центру */
-  flex-wrap: wrap;          /* перенос на новий ряд при малих екранах */
+  flex-wrap: wrap;     /* перенос на новий ряд при малих екранах */
 }
 
 .section-second-item {
@@ -254,7 +254,8 @@ color:#ffffff
   height: auto;               
 }
 
-.card { margin: 32px 16px 32px 16px;
+.card {
+ padding: 32px 16px 32px 16px;
 }
 
 .section-second .subtitle,
@@ -284,6 +285,9 @@ text-align: center;
 
 /* Підвал сторінки */
 .page-footer {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
  background-color: #2e2f42;
 }
 
@@ -293,4 +297,5 @@ max-width: 264px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+margin-top: 16px;
 }
