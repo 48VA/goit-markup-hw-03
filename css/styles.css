@@ -281,7 +281,7 @@ text-align: center;
 
 .section-third-list {
   display: flex;           /* гнучкий контейнер */
-  gap: 24px 48px;           /* відстань між картками та рядками */
+  gap: 48px 24px ;           /* відстань між картками та рядками */
   justify-content: center;  /* вирівнювання по центру */
   flex-wrap: wrap;   
 }
