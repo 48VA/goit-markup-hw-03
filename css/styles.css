@@ -138,6 +138,8 @@ color:#ffffff
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title-main {
@@ -164,7 +166,9 @@ color:#ffffff
   box-sizing: border-box;
   border-radius: 4px;
   white-space: nowrap;
-  }
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Підзаголовки */
 .subtitle {
@@ -246,6 +250,11 @@ color:#ffffff
   width: calc((100% - 24px * 3) / 4); 
   text-align: center;         
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow:
+   0 2px 1px 0 rgba(46, 47, 66, 0.08),
+   0 1px 1px 0 rgba(46, 47, 66, 0.16),
+   0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .photo-team {
@@ -256,7 +265,7 @@ color:#ffffff
 
 .card {
  padding: 32px 16px 32px 16px;
-}
+ }
 
 .section-second .subtitle,
 .section-second .text {
@@ -271,13 +280,18 @@ text-align: center;
 }
 
 .section-third-list {
-  display: flex;            /* гнучкий контейнер */
-  gap: 24px;                /* відстань між картками */
+  display: flex;           /* гнучкий контейнер */
+  gap: 24px 48px;           /* відстань між картками та рядками */
   justify-content: center;  /* вирівнювання по центру */
-  flex-wrap: wrap;    
+  flex-wrap: wrap;   
 }
 
-  .section-third-item {
+.section-third-list .card {
+  border-bottom: 1px solid #E7E9FC;
+  border-left: 1px solid #E7E9FC;
+  border-right: 1px solid #E7E9FC;
+}
+ .section-third-item {
   width: calc((100% - 24px * 2) / 3); 
   text-align: left;  
   background-color: #ffffff;
@@ -285,9 +299,9 @@ text-align: center;
 
 /* Підвал сторінки */
 .page-footer {
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+ width: 100%;
+ padding-top: 100px;
+ padding-bottom: 100px;
  background-color: #2e2f42;
 }
 
