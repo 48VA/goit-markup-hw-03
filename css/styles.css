@@ -154,6 +154,7 @@ color:#ffffff
 
 /* Кнопка у головній секції */
 .bt-title-main {
+  border: none;
   width: 169px;
   font-size: 16px;
   font-weight: 500;
@@ -291,10 +292,16 @@ text-align: center;
   border-left: 1px solid #E7E9FC;
   border-right: 1px solid #E7E9FC;
 }
+
  .section-third-item {
   width: calc((100% - 24px * 2) / 3); 
   text-align: left;  
-  background-color: #ffffff;
+  }
+
+  .photo-portfolio {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Підвал сторінки */
